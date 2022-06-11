@@ -1,0 +1,128 @@
+@import 'colors'
+   
+.form-wrap
+    font-family: 'Proxima Nova Regular', sans-serif
+    padding-bottom: 40px
+   
+   
+    
+   
+    
+.form 
+    box-shadow: 0 0 10px rgba(black, 0.5)
+    background: url('../img/offer-bg.jpg') center right no-repeat
+    background-color: white
+    width: 80%
+    margin: 130px
+    padding: 40px 80px
+
+   
+   
+    
+.form-header
+    display: flex
+    flex-direction: column
+    align-items: left
+    justify-content: space-between 
+    margin-bottom: 50px
+    
+    
+    h1
+         text-transform: uppercase
+         font-family: 'Proxima Nova Bold', sans-serif !important
+
+
+.form-row-first-form
+    display: flex
+    align-items: center
+    justify-content: left
+
+    &-block
+      display: flex
+      flex-direction: column
+      margin-bottom: 20px
+      &-label
+          font-family: 'Proxima Nova Light', sans-serif !important
+          
+
+      &-type
+          padding-left: 20px
+          height: 80px
+          width: 320px
+          margin-top: 10px
+          border: 1px solid rgba(grey,0.3)
+.form-row-second-form
+    display: flex
+    align-items: center
+    
+    margin-bottom: 20px
+   
+    &-radio-install
+        display: none
+        
+    &-radio-delivery
+        display: none
+    
+
+        
+        
+       
+    span
+        display: inline-block
+       
+        width: 30px
+        height: 30px
+        border: 1px solid rgba(grey,0.3)
+        margin: 0px 12px
+        background-size: contain
+       
+    span:hover
+        cursor: pointer
+        
+       
+       
+    &-label:hover
+        cursor: pointer
+  
+
+.form-row-third-form
+    display: flex 
+    &-name
+       
+        height: 80px
+        width: 320px
+        border: 1px solid rgba(grey,0.3)
+        margin-top: 10px
+        padding-left: 20px
+    &-tel
+       
+        height: 80px
+        width: 320px
+        border: 1px solid rgba(grey,0.3)
+        margin-top: 10px
+        padding-left: 20px
+    &-button    
+        height: 80px
+        width: 320px
+        margin-top: 10px
+        background-color: #0086ff
+        color: #fff
+        border: none
+        font-size: 17px
+        text-transform: uppercase
+    &-button:hover
+        cursor: pointer
+        background-color: darken($blue, 7%)
+
+
+
+.checked
+    background-color: black
+
+.change-bg
+    background: url("../img/checkbox.svg") center center no-repeat
+    
+    outline: 1px solid $dark-blue
+
+     
+  

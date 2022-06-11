@@ -1,0 +1,89 @@
+.prices
+    font-family: 'Proxima Nova Regular', sans-serif
+    background-color: white
+    &-wrap
+        margin: 50px 160px
+    &-header
+        margin-bottom: 70px
+        padding-top: 70px
+        text-align: center
+        h1
+            text-transform: uppercase
+            font-family: 'Proxima Nova Bold', sans-serif !important
+            font-size: 25px
+    &-block
+        display: flex
+        flex-wrap: wrap
+
+
+        &-cell
+           
+           margin-right: 13px
+           background-color: white
+           margin-bottom: 20px
+           box-shadow: 0 0 5px lighten(black,80%)
+        &-cell:hover
+           cursor: pointer
+        &-cell
+      
+           img
+               
+
+           &-info
+               position: relative
+               display: flex
+               align-items: center
+               justify-content: space-between
+               background-color: white
+               padding: 25px
+               
+           &-subtitle
+               color: lighten(black,20%)
+               font-family: 'Proxima Nova Light', sans-serif !important
+           &-price
+               font-family: 'Proxima Nova Bold', sans-serif !important
+               sup
+                   font-size: 10px
+                   font-family: 'Proxima Nova Bold', sans-serif !important
+           &-form
+               transition: 0.4s
+               background-color: white
+               position: absolute
+               width: 100%
+               height: 71.6px
+
+               display: flex
+               align-items: center
+               left: 0px
+               top: 0px
+               opacity: 0
+
+           
+               
+               &-button
+                    
+                    margin-bottom: 10px
+                    margin: auto
+                    width: 250px
+                    height: 60px
+                    padding: 20px
+                    text-transform: uppercase
+                    font-size: 14px
+                    border: 1px solid $dark-blue
+                    color: white
+                    background-color: $dark-blue
+                    transition: 0.2s
+                   
+               &-button:hover
+                    cursor: pointer
+                    background-color: darken($dark-blue, 7%)
+.animation-form
+    display: flex
+    transform: translateY(90%)
+    opacity: 1
+    padding-bottom: 20px
+        
+      
+
+       
+ 

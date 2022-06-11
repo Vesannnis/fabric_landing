@@ -1,0 +1,289 @@
+@import 'colors'
+
+
+@font-face 
+    font-family: 'Proxima Nova Light'
+    src: url('../fonts/ProximaNova-Light.eot')
+    src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/ProximaNova-Light.woff') format('woff')
+    src: url('../fonts/ProximaNova-Light.ttf') format('truetype')
+
+
+@font-face 
+    font-family: 'Proxima Nova Regular'
+    src: url('../fonts/ProximaNova-Regular.eot')
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/ProximaNova-Regular.woff') format('woff')
+    src: url('../fonts/ProximaNova-Regular.ttf') format('truetype')
+  
+
+  
+@font-face 
+    font-family: 'Proxima Nova Bold'
+    src: url('../fonts/ProximaNova-Bold.eot')
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/ProximaNova-Bold.woff') format('woff')
+    src: url('../fonts/ProximaNova-Bold.ttf') format('truetype')
+  
+  
+
+
+
+
+*
+    box-sizing: border-box
+    
+    
+    
+    
+
+body
+
+    padding: 0
+    margin: 0
+    
+    
+    
+    
+  
+
+    
+main
+   
+    
+
+.hat
+    position: fixed
+    left: 0px
+    top: 0px
+    display: flex
+   
+    flex-direction: column
+    width: 100%
+    height: 80px
+    border-bottom: 1px solid rgba(#0086ff,0.5)
+    background-color: white
+    z-index: 500
+  
+
+
+ 
+.header
+    
+    display: flex
+    justify-content: space-between
+    padding: 0px 150px
+    width: 100%
+    height: 80px
+    flex-wrap: wrap  
+    overflow: hidden
+    background-color: white
+    
+    
+    
+    &-menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        height: 100%
+        width: 5%
+        border-right: 1px solid rgba(grey,0.2)
+        border-left: 1px solid rgba(grey,0.2)
+        transition: 0.9s
+    &-menu:hover
+        cursor: pointer
+    &-string
+        margin-bottom: 3px
+        height: 2.5px
+        width: 28%
+        background-color: #0086ff
+    &-logo
+        padding: 0px 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        &-title
+            text-transform: uppercase
+            font-family: 'Proxima Nova Bold', sans-serif !important
+          
+            
+            
+            margin-bottom: 5px
+            font-size: 20px
+        &-subtitle 
+            font-size: 14px
+            color: grey
+            font-family: 'Proxima Nova Light', sans-serif !important
+    &-phone1
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        &-phone
+            font-size: 19px
+            font-family: 'Proxima Nova Bold', sans-serif !important
+            text-decoration: none 
+            color: black
+            margin-bottom: 5px
+        &-subtitle
+            font-size: 14px
+            color: grey
+            font-family: 'Proxima Nova Light', sans-serif !important
+    &-phone2
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        &-phone
+            font-size: 19px
+            font-family: 'Proxima Nova Bold', sans-serif !important
+            text-decoration: none 
+            color: black
+            margin-bottom: 5px
+        &-subtitle
+            font-size: 14px
+            color: grey
+            font-family: 'Proxima Nova Light', sans-serif !important
+    &-button-wrap
+        display: flex
+        align-items: center
+        justify-content: center
+    &-button
+        font-size: 18px
+        color: rgba($blue, 0.8)
+        padding: 20px
+        border: 2px solid $blue
+        background-color: white
+        transition: 0.2s
+    &-button:hover
+            background-color: $blue
+            color: white
+            cursor: pointer
+    &-nav-wrap
+        position: relative
+        display: flex
+        padding: 0px
+        height: 0px
+        width: 100%
+       
+        z-index: -2
+    &-nav 
+        opacity: 1
+        display: flex
+        position: absolute
+        z-index: -3
+        transform: translateY(-100%)
+        
+        
+        
+        width: 100%
+        align-items: center
+        justify-content: space-between
+        background-color: $dark-blue
+        padding: 0px 150px
+        height: 50px
+        transition: 0.2s
+        
+        &-cell
+            height: 100%
+            padding: 15px
+            display: flex
+            align-items: center
+            justify-content: center
+            &-ref
+                text-decoration: none
+                color: white
+        &-cell:hover
+            background-color: darken($dark-blue,5%)
+            cursor: pointer
+
+
+.general-wrap
+    background: url('../img/main-bg.jpg') top center no-repeat $grey
+    margin-top: 80px
+.general
+    
+    &-info
+        display: flex
+        align-items: left
+        justify-content: center
+        flex-direction: column
+        padding: 0px 150px
+        width: 60%
+        line-height: 50px
+        &-title
+            margin-top: 120px
+            margin-bottom: 30px
+            font-size: 35px
+        &-subtitle
+            font-family: 'Proxima Nova Bold', sans-serif !important
+            margin-bottom: 30px
+            font-size: 35px
+            sup
+                font-family: 'Proxima Nova Bold', sans-serif !important
+                font-size: 20px
+        &-button
+            width: 40%
+            height: 65px
+            padding: 15px
+            font-family: 'Proxima Nova Bold', sans-serif !important
+            font-size: 22px
+            border: 1px solid $blue
+            color: white
+            background-color:  $blue
+            transition: 0.2s
+        &-button:hover
+            cursor: pointer
+            background-color: darken($blue, 7%)
+.display-hide
+    transform: translateY(0%)
+    transition: 0.2s
+    opacity: 100%
+
+
+    
+
+
+
+@import 'form'
+
+@import 'features'
+@import 'catalog'
+@import 'blog'
+@import 'prices'
+@import 'steps'
+@import 'before-after'
+@import 'feedback'
+@import 'form2'
+@import 'about'
+@import 'contacts'
+@import 'map'
+@import 'footer'
+             
+            
+       
+
+
+            
+        
+       
+    
+      
+
+    
+
+    
+
+        
+        
+
+   
+        
+    
+       
+
+   
+
+ 

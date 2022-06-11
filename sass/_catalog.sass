@@ -1,0 +1,126 @@
+.catalog-wrap
+    font-family: 'Proxima Nova Regular', sans-serif
+    display: block
+    width: 100%
+    background-color: $grey
+.catalog
+    &-header
+        display: flex
+        width: 100%
+        justify-content: center
+        padding: 50px
+        
+        
+        h1
+            font-size: 25px
+            text-transform: uppercase
+            font-family: 'Proxima Nova Bold', sans-serif !important
+    &-block
+        display: flex
+        margin: 0px 160px
+        
+        align-items: center
+        justify-content: space-around
+        flex-wrap: wrap
+        &-cell
+            position: relative
+            display: flex
+            height: 130px
+            width: 570px
+            margin: 20px 0px
+            z-index: 1
+            overflow: hidden
+            
+            
+            &-title
+                position: absolute
+                z-index: 99
+                padding: 12px
+                background-color: $dark-blue
+                margin: 10px
+                text-transform: uppercase
+                color: white
+                font-family: 'Proxima Nova Bold', sans-serif !important
+                font-size: 11px
+            &-form
+                transition: 0.3s
+                display: flex
+                
+                align-items: center
+                
+               
+                position: absolute
+                top: calc(100% - 44.4px)
+                right: 0px
+                font-size: 15px
+                transform: translateY(100%) 
+                font-size: 18px
+           
+            
+                
+                &-try
+                    display: block
+                    
+                    padding: 15px
+                    color: $dark-blue
+                    transition: 0.3s
+                    
+                    background-color: white
+                &-try:hover
+                   
+                    cursor: pointer
+                    background-color: $dark-blue
+                    color: white
+                    
+                &-order
+                    display: block
+                    
+                    padding: 15px
+                    color: white
+                    transition: 0.3s
+                    background-color: $dark-blue
+                &-order:hover
+                    cursor: pointer
+                    background-color: darken($dark-blue,5%)
+                    
+       
+           
+                
+
+    &-footer
+        margin-top: 40px
+        width: 100%
+        text-align: center
+        padding-bottom: 80px
+
+        margin-bottom: 90px
+        font-family: 'Proxima Nova Light', sans-serif !important
+
+        &-button
+            margin-bottom: 10px
+            width: 20%
+            height: 60px
+            padding: 15px
+            text-transform: uppercase
+            font-size: 14px
+            border: 1px solid $dark-blue
+            color: white
+            background-color:  $dark-blue
+            transition: 0.2s
+        &-button:hover
+            cursor: pointer
+            background-color: darken($dark-blue, 7%)
+.animateY
+    transform: none
+  
+            
+
+         
+
+    
+           
+        
+ 
+
+
+        
